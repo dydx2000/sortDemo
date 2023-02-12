@@ -5,7 +5,10 @@ export const tableDom = document.createElement('div')
 
 
 tableDom.id = 'table_dom'
-// tableDom.style.height=''
+// tableDom.height = userInfoDom.clientHeight
+// console.log(userInfoDom.clientHeight);
+// console.log(userInfoDom.offsetHeight);
+// console.log(userInfoDom.scrollHeight);
 
 // tableDom.style.height=userInfoDom
 
@@ -38,7 +41,7 @@ tableDom.appendChild(tabContent)
 // console.log(userInfoList);
 
 export function readList(userInfoList) {
-  tabContent.innerHTML=''
+  tabContent.innerHTML = ''
 
   // console.log("hello userinfolist");
   userInfoList.forEach(element => {
@@ -46,19 +49,19 @@ export function readList(userInfoList) {
     contentLine.className = 'content_line'
     const nameValue = document.createElement('span')
     nameValue.textContent = element.name
-  
+
     const ageValue = document.createElement('span')
     ageValue.textContent = element.age
-  
+
     const incomeValue = document.createElement('span')
     incomeValue.textContent = element.income
-  
+
     contentLine.appendChild(nameValue)
     contentLine.appendChild(ageValue)
     contentLine.appendChild(incomeValue)
-  
+
     tabContent.appendChild(contentLine)
-  
+
   });
 
 }

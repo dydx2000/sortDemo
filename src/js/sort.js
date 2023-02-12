@@ -14,9 +14,44 @@ export const userInfoList = [
     income: 20000
   },
   {
+    name: "Amy",
+    age: 28,
+    income: 10000
+  },
+  {
+    name: "Amy",
+    age: 25,
+    income: 20000
+  },
+  {
     name: "Vincent",
     age: 25,
     income: 10000
+  },
+  {
+    name: "Vincent",
+    age: 22,
+    income: 19980
+  },
+  {
+    name: "Vincent",
+    age: 28,
+    income: 20000
+  },
+  {
+    name: "Vincent",
+    age: 28,
+    income: 9800
+  },
+  {
+    name: "Peter",
+    age: 22,
+    income: 30000
+  },
+  {
+    name: "Peter",
+    age: 28,
+    income: 30001
   },
   {
     name: "Peter",

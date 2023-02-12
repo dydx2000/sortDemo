@@ -20,6 +20,11 @@ app.appendChild(tableDom)
 
 
 readList(userInfoList)
+console.log(userInfoDom.offsetHeight);
+let user_height = userInfoDom.offsetHeight;
+// tableDom.offsetHeigh = userInfoDom.offsetHeight
+// tableDom.offsetHeight = "180px";
+tableDom.style.height = user_height +"px";
 
 
 // tableDom.append(contentLine)
