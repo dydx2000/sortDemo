@@ -41,6 +41,11 @@ body {
   padding: -1px;
   // height: 100vh;
 
+  height: 100%;
+    overflow-y: scroll;
+
+    padding: -1px;
+
   #table_title {
     // flex:1;
     padding: -1px;
@@ -70,7 +75,9 @@ body {
   }
 
   #table_content {
-    padding: -1px;
+
+    // position: absolute;
+    
     // display: flex;
     .content_line {
       padding: -1px;
