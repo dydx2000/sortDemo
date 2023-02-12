@@ -1,0 +1,59 @@
+@use "center.scss" as center;
+@import "normalize.css";
+
+:root {
+  font-size: 10px;
+}
+
+html,
+body {
+  @include center.flexCenter;
+  width: 100vw;
+  height: 100vh;
+}
+
+#app {
+  @include center.flexCenter;
+  width: 100%;
+  height: 100%;
+}
+
+#user_info {
+  @include center.flexCenter;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  gap: 0.2rem;
+}
+
+#user_submit {
+  width: 100%;
+  align-self: center;
+  margin: 1rem 0 0.5rem 0;
+}
+
+#table_dom {
+  border: black 1px solid;
+  width: 300px;
+  height: 160px;
+
+  #table_title {
+    display: flex;
+    direction: row;
+    gap: 2rem;
+    color: red;
+
+  }
+
+  #table_content {
+    .content_line {
+
+      display: flex;
+      direction: row;
+      color: blue;
+      gap: 2rem;
+    }
+
+  }
+}
