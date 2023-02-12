@@ -26,6 +26,12 @@ export const userInfoList = [
 ]
 
 userDom.userInfoSubmit.addEventListener('click', () => {
+
+  // 清除排序数字
+  tableAge.textContent = "Age"
+  tableName.textContent = "Name"
+  tableIncome.textContent = "Income"
+  
   // console.log('submit');
   const userInfo = new UserInfoStructure()
   // console.log(userInfo)
