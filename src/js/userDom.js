@@ -31,6 +31,7 @@ userNameInput.id = userDom.userNameInput.id
 userNameInput.type ='text'
 
 userAgeFrame.id = 'age_frame'
+userAgeCur.textContent='50'
 
 userAgeInput.id = userDom.userAgeInput.id
 userAgeInput.type='range'
