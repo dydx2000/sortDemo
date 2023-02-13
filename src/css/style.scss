@@ -37,37 +37,28 @@ body {
 }
 
 #table_dom {
+  box-sizing: border-box;
+
+  // overflow: hidden;
+  // overflow: scroll;
   margin-left: 2px;
   border: 1.5px solid rgba(0, 0, 0, 0.596);
   width: 300px;
-  // padding: -1px;
-  // height: 100vh;
-
   height: 100%;
-  overflow-y: scroll;
-  border-radius: 3px;
-
   // scrollbar-arrow-color:yellow;
   // scrollbar-base-color:lightsalmon;
-
-  &::-webkit-scrollbar {
-    
-    width: 8px;
-
-  }
-
   // &::-webkit-scrollbar-thumb {
   //   background-color: rgb(162, 179, 185);
-
   // }
 
-  padding: -1px;
+  // padding: -1px;
+  padding-bottom: 2px;
 
   #table_title {
-    
+    width: 95.3%;
     // padding: 3px;
     margin: 2px;
-    
+
     // flex:1;
     // padding: -1px;
     display: flex;
@@ -76,29 +67,52 @@ body {
     // justify-content: center;
     // align-items: baseline;
     // border: 1px solid rgba(0, 0, 0, 0.596);
+    background-color: rgb(219, 171, 201);
 
     :nth-child(n) {
       border-radius: 1px;
       font-size: 8px;
       width: 30%;
-      border: 1px solid rgba(0, 0, 0, 0.596);
+      // border: 1px solid rgba(0, 0, 0, 0.596);
     }
 
     :nth-child(3) {
       border-radius: 1px;
       font-size: 8px;
       width: 40%;
-      border: 1px solid rgba(0, 0, 0, 0.596);
+      // border: 1px solid rgba(0, 0, 0, 0.596);
     }
 
-    color: red;
+    color: rgb(143, 13, 13);
 
 
   }
 
   #table_content {
+    // margin:10px;
+
+    height:max-content;
+    height:88%;
+    overflow-y: auto;
+    
+    > :nth-child(2n+1) {
+      background-color: rgba(119, 111, 111, 0.247);
+    }
+
+    > :nth-child(2n+2) {
+      background-color: rgba(194, 187, 187, 0.164);
+    }
+
+
+    border-radius: 3px;
     // padding: 3px;
-    margin:2px;
+    margin: 2px;
+    // gap:1px;
+    font-size: 10px;
+
+    // :nth-child(2n+1) {
+    //   background-color: grey;
+    // }
 
     // position: absolute;
 
@@ -106,17 +120,19 @@ body {
     .content_line {
       // padding: -1px;
       // margin:1px;
+      margin-bottom: 1px;
+
       text-align: center;
       // border: 1px solid black;
       display: flex;
 
       // justify-content:;
       :nth-child(1) {
-        
+
         border-radius: 1px;
-      // font-size: 8px;
-      width: 30%;
-      border: 1px solid rgba(0, 0, 0, 0.596);
+        // font-size: 26px;
+        width: 30%;
+        border: 1px solid rgba(0, 0, 0, 0.596);
       }
 
       :nth-child(2) {
@@ -132,40 +148,10 @@ body {
       }
 
       // direction: row;
-      color: blue;
+      color: rgb(16, 16, 110);
       // gap: 2rem;
     }
 
+
   }
 }
-
-
-// #table_dom::-webkit-scrollbar {
-//   /*滚动条整体样式*/
-//   width : 5px; /*高宽分别对应横竖滚动条的尺寸*/
-//   // height: 1px;
-// }
-// #table_dom::-webkit-scrollbar-thumb {
-// //   /*滚动条里面小方块*/
-// //   // border-radius : 10px;
-//   background-color: rgb(161, 175, 180);
-// //   // background-image: -webkit-linear-gradient(
-// //   //     45deg,
-// //   //     rgba(255, 255, 255, 0.2) 25%,
-// //   //     transparent 25%,
-// //   //     transparent 50%,
-// //   //     rgba(255, 255, 255, 0.2) 50%,
-// //   //     rgba(255, 255, 255, 0.2) 75%,
-// //   //     transparent 75%,
-// //   //     transparent
-//   // );
-// }
-// #table_dom::-webkit-scrollbar-track {
-//   /*滚动条里面轨道*/
-//   // box-shadow : inset 0 0 5px rgba(0, 0, 0, 0.2);
-//   // background : #ededed;
-//   // border-radius: 10px;
-// }
-
-
-
